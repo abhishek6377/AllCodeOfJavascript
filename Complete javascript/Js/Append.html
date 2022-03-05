@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.append.com</title>
+</head>
+<body>
+    <h2 id="intro">Append</h2>
+    <h2>This is append web page..</h2>
+    <p>append means add the element in last</p>
+</body>
+<script>
+    let lp=document.getElementById("intro");
+    let h1=document.createElement('h1');
+    h1.id="with";
+    let text =document.createTextNode("This is h1 tag create by append function");
+    // h1.appendChild(text);
+    // lp.appendChild(h1);// this is way to add element through by function 
+    /// if you want to add the element in body 
+                        
+                        // this way to add append by properties
+
+                        h1.textContent="add by properties using append ";
+    document.body.appendChild(h1);// that  we  add element after body 
+
+
+
+
+</script>
+</html>
+ 

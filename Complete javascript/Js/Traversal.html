@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>www.traversal.com</title>
+</head>
+<body>
+    <h2>Traversal/InnerHTML</h2>
+    <p>It means we select the parent to child and child to parenet </p>
+
+
+    <h5>selecting  parent to child</h5>
+<!-- <ul type="square" id="intro"> -->
+<ul type="square" >
+    <!-- <li id="intro">List 1</li> -->
+    <li >List 1</li>
+    <li id="intro">List 2</li>   
+    <li>List 3</li>
+    <li>List 4</li>
+
+</ul>
+  <h3 id="id1">I am inner html </h3>
+
+</body>
+<script>
+    //  let elm=document.getElementById("intro");
+    // //   let el = elm.lastElementChild;
+    // //   let el = elm.firstElementChild;
+    //   let el = elm.children;
+    //   console.log(el);
+      
+    // for (let i = 0; i < el.length; i++) {
+    //       el[i].innerHTML="I am changed bro ";
+
+    // }
+
+    document.write("<h5>selecting child to parent </h5>");
+    document.write("<br>");
+
+    // let elm = document.getElementById("intro");
+    //  console.log(elm);
+    //   let el=elm.parentElement;
+    //   console.log(el);
+    //   el.innerHTML=" I am heading changed";
+    document.write("selecting the child to sibling");
+     let elm = document.getElementById("intro");
+     console.log(elm);
+    //   let el=elm.previousElementSibling;
+      let el=elm.nextElementSibling;
+      console.log(el);
+      el.innerHTML=" I am heading changed";
+      document.write("<br>");
+      document.write("<h1>Inner html<h1>");
+
+    document.write("Fetching  the element and attribute by inner html ");
+    let a=document.getElementById("id1");
+    console.log(a);// that way we know what element are present 
+  let b =a.innerHTML="I am inner html (changed )";
+
+      
+
+
+
+</script>
+</html>

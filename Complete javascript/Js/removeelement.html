@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+    
+</body>
+<script>
+
+let x=document.getElementById("list");
+// let y=x.firstElementChild;
+document.write("<br>");
+document.write("if you want to delete next node");
+document.write("<br>");
+// let y=x.firstElementChild.nextElementSibling;
+// x.removeChild(y);// by this method we remove the element 
+
+document.write("<br>");
+document.write("do want to delete all element on body use this method");
+document.write("<br>");
+document.body.removeChild(x);
+</script>
+</html>

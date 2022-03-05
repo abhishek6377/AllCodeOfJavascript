@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.ripper.com</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: rgb(255, 12, 174);">DOM(document object Model)</h1>
+    <h2>This is web page !</h2>
+    <ul>
+        <li id="hello">Red</li>
+        <li class="li">Orange</li>
+        <li class="li">Pink</li>
+        <li class="li l1">yellow</li>
+    </ul>
+    
+    <h2 class="intro">Heading 1</h2>
+    <p>Par 1</p>
+    <div id="div1">
+        
+        <h2 class="intro">heading 2</h2>
+        <p class="intro">Par 2</p>
+        <h2>Heading 3</h2>
+        <p class="intro">Par 3</p>
+    </div>
+
+</body>
+<script>
+    document.write("<h2>Using getElementById</h2>");
+    let c=document.getElementById("hello");
+    console.log(c);
+    document.write(".innerHtml means we change in html we also get the value and set the value <br>");
+    document.write("<br>");
+    // document.write("<br>");
+    document.write("get the value of html is:= "+c.innerHTML);
+    document.write("<br>");
+    document.write("Set the value of html through innerHTML ");
+    c.innerHTML="<p>Black(i am changed)</p>";
+    // ****************************************************************
+    document.write("<h2>Using getElementByClassName</h2>");
+    document.write("<br>");
+    let d=document.getElementsByClassName("li");
+    let e=document.getElementsByClassName("li l1");
+    document.write(" in class we change multiple element it convert into a array do want to changed all element use array");
+    // document.write(d.length);
+    
+    for (let i = 0; i < d.length; i++) {
+        
+         d[i].innerHTML="I am changed";
+        }
+    for (let i = 0; i < e.length; i++) {
+        
+        e[i].innerHTML="Secondclass also changed ";
+        
+    }
+    document.write("It is same process one more classes");
+
+    // console.log(d);
+    //  *****************************************************************   
+    document.write("<h2>Using getElementByTagName</h2>");
+    document.write("<br>");
+    let x=document.getElementsByTagName("h2");
+    // for (let i = 0; i < x.length; i++) {
+    //   x[i].innerHTML="I am heading";
+    //   // byy this we change the all tags 
+    // }
+    
+    document.write("suppose you want to change a particular tag use this....");
+    // let z1=document.getElementById("div1");
+                     // this is change by tag name✔🐱‍🚀🐱‍🚀🐱‍👓🐱‍🐉✔✔✔✔✔✔
+    // let z2=z1.getElementsByTagName("h2");
+    
+    // for (let i = 0; i < z2.length; i++) {
+     
+    //   // byy this we change the all tags 
+    //   z2[i].innerHTML="I am head";
+    // }
+
+     // this is change by class name✔🐱‍🚀🐱‍🚀🐱‍👓🐱‍🐉✔✔✔✔✔✔
+
+
+    //   let z1=document.getElementById("div1");
+                    
+    // let z2=z1.getElementsByClassName("intro");
+    
+    // for (let i = 0; i < z2.length; i++) {
+     
+    //   // byy this we change the all tags 
+    //   z2[i].innerHTML="I am head";
+    // }
+
+
+    document.write("<h2>Using document.querySelector</h2>");
+    document.write(" if set a particular element use querySelector and set all element use querySelectorAll ,I works as css like p.id,class.id");
+    document.write("<br>");
+
+    let x1=document.querySelectorAll("h2.intro");
+     for (let i = 0; i < x1.length; i++) {
+         
+         
+        x1[i].innerHTML="I am back ";
+     }
+</script>
+</html>

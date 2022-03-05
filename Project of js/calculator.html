@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<title>calculator</title>
+<style>
+.di{
+border:2px solid black ;
+padding:50px 50px 50px 50px;
+width:30%;
+background-color:sky blue;
+}
+.d{
+color:white;
+background-color:green;
+}
+.t{
+background-color:orange;
+
+color:blue;
+}
+</style>
+</head>
+<body>
+<center>
+<h2>Calculator</h2>
+
+<div class="di">
+<b>Enter a  First number :</b><input type ="text" id="fno" class="t"><br><br>
+<b>Enter a  Second number :</b><input type ="text" id="sno"class="t"><br><br>
+<button class="d" onclick="add()">Addition</button>
+<button class="d" onclick="sub()">Subration</button>
+<button class="d" onclick="div()">Division</button>
+<button class="d" onclick="mul()">Multiple</button><br>
+<b>Result:</b><b id="result"></b>
+<script>
+function add(){
+var a=+document.getElementById("fno").value;
+var b=+document.getElementById("sno").value;
+c=a+b;
+document.getElementById("result").innerHTML=c;
+
+
+}
+function sub(){
+var a=+document.getElementById("fno").value;
+var b=+document.getElementById("sno").value;
+c=a-b;
+document.getElementById("result").innerHTML=c;
+
+
+
+}
+function mul(){
+var a=+document.getElementById("fno").value;
+var b=+document.getElementById("sno").value;
+c=a*b;
+document.getElementById("result").innerHTML=c;
+
+
+
+
+}
+function div(){
+var a=+document.getElementById("fno").value;
+var b=+document.getElementById("sno").value;
+c=a/b;
+document.getElementById("result").innerHTML=c;
+
+}
+
+</script>
+</div>
+</center>
+<center><h2 style="color:red"> Made By Abhishek Gupta. </h2></center>
+
+</body>
+
+</html>
